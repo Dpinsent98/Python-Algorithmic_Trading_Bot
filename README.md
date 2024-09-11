@@ -30,25 +30,25 @@ Optimization:
 For the Mean Reversion Buy strategy, optimization is available, adjusting parameters to maximize returns.
 Trading Strategies
 1. Moving Average Crossover
-    # Computes 3-day and 14-day moving averages.
-    # Generates buy signals when the 3-day MA crosses above the 14-day MA.
-    # Generates sell signals when the 3-day MA crosses below the 14-day MA.
+    * Computes 3-day and 14-day moving averages.
+    * Generates buy signals when the 3-day MA crosses above the 14-day MA.
+    * Generates sell signals when the 3-day MA crosses below the 14-day MA.
 2. Breakout Strategy (Upward)
-    # Identifies upward breakouts based on the price crossing the 14-day moving average.
-    # Uses volatility comparison between the 14-day and 30-day standard deviation for additional signal filtering.
+    * Identifies upward breakouts based on the price crossing the 14-day moving average.
+    * Uses volatility comparison between the 14-day and 30-day standard deviation for additional signal filtering.
 3. Breakout Strategy (Downward)
-    # Identifies downward breakouts when the price falls below the 14-day moving average.
-    # Similar volatility comparison as BreakoutUp.
+    * Identifies downward breakouts when the price falls below the 14-day moving average.
+    * Similar volatility comparison as BreakoutUp.
 4. Mean Reversion (Buy)
-    # Buys when the stock price is below the 14-day moving average.
-    # Sells when the price rises above a certain threshold of standard deviation.
-    # Includes an optimization process to maximize returns.
+    * Buys when the stock price is below the 14-day moving average.
+    * Sells when the price rises above a certain threshold of standard deviation.
+    * Includes an optimization process to maximize returns.
 5. Mean Reversion (Sell)
-    # Sells when the stock price is significantly below its 14-day moving average.
-    # Closes the position when the price reverts to the mean.
+    * Sells when the stock price is significantly below its 14-day moving average.
+    * Closes the position when the price reverts to the mean.
 6. Trend Following
-    # Buys when the stock is in an uptrend (i.e., when the 7-day MA is above the 100-day MA).
-    # Sells when the stock is in a downtrend (i.e., when the 7-day MA is below the 100-day MA).
+    * Buys when the stock is in an uptrend (i.e., when the 7-day MA is above the 100-day MA).
+    * Sells when the stock is in a downtrend (i.e., when the 7-day MA is below the 100-day MA).
 
 Example Usage
 To run the Trend Following strategy on Microsoft (MSFT) stock:
